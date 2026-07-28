@@ -1,0 +1,11 @@
+agent:
+  registry:
+    host: localhost
+    port: 8080
+  execution_engine:
+    host: localhost
+    port: 8081
+service:
+  registry:
+    host: localhost
+    port: 8082
