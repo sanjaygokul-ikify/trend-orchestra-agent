@@ -42,3 +42,9 @@ class Engine:
         except Exception as e:
             logger.error(f"Error executing agent {agent_id} with service {service_id}: {str(e)}")
             raise EngineError(f"Error executing agent {agent_id} with service {service_id}")
+
+    def get_agent_registry(self) -> dict:
+        return self.agent_registry.get_registry()
+
+    def get_service_registry(self) -> dict:
+        return self.service_registry.get_registry()
